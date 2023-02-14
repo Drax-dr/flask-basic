@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>Profile form</h3>
+        <form action="/add" method="POST">
+            <label>User Name</label>
+            <input type="text" name="username" placeholder="User name...">
+            <label>Password</label>
+            <input type="text" name= "password" placeholder="password...">
+            <button type="submit">Add</button>
+        </form>
+{% endblock %}

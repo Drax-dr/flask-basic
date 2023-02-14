@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <table>
+        <thead>
+        <th name="ID">Id</th>
+        <th name="un">First Name</th>
+        <th name="passwd">Last Name</th>
+        <th name="date">Date added</th>
+        <th name="actions">Actions</th>
+        </thead>
+        {% for data in profiles %}
+        <tbody>
+        <td name="D_id">{{data.id}}</td>
+        <td name="uname">{{data.username}}</td>
+        <td name="password">{{data.password}}</td>
+        <td name="password">{{data.date_joined}}</td>
+        <td name="delete"><a href="#">Delete</a></td>
+        </tbody>
+        {% endfor%}
+    </table>
+{% endblock %}
