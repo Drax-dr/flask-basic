@@ -14,7 +14,7 @@
         <td name="uname">{{data.username}}</td>
         <td name="password">{{data.password}}</td>
         <td name="password">{{data.date_joined}}</td>
-        <td name="delete"><a href="url_for('/delete', data.id)">Delete</a></td>
+        <td name="delete"><a href="url_for('/delete/', data.id)">Delete</a></td>
         </tbody>
         {% endfor%}
     </table>
